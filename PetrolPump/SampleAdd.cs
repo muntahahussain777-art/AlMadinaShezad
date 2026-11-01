@@ -8,13 +8,44 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PetrolPump
+namespace AlMadinaShahzad
 {
     public partial class SampleAdd : Sample
     {
         public SampleAdd()
         {
             InitializeComponent();
+            KeyPreview = true;
+        }
+
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.Escape)
+            {
+                Close();
+                return true;
+            }
+
+            if (keyData == (Keys.Control | Keys.S) && btnSave != null && btnSave.Enabled && btnSave.Visible)
+            {
+                btnSave_Click(btnSave, EventArgs.Empty);
+                return true;
+            }
+
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
+
+        public virtual void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        public virtual void btnDel_Click(object sender, EventArgs e)
+        {
+
+        }
+        public virtual void btnSave_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,0 +1,22 @@
+# Al Madina Shezad Chhutta Services — Form Shortcuts
+# Sirf Ctrl + letter. Help: F1
+# Format: Shortcut=FormClassName|Label
+
+Ctrl+D=frmDiselView|Daily Diesel Sales
+Ctrl+C=frmCreditAdjust|Credit Customer
+Ctrl+A=frmDealerNameView|Add Dealer
+Ctrl+P=frmDieselLedgerView|Dealer Payout
+Ctrl+M=frmStockView|DealerAmount
+Ctrl+I=FrmDirectDealerPaymentAmountView|Direct Dealer Amount
+Ctrl+U=frmCustomerView|Add Customer
+Ctrl+T=frmCustomerToCustomerView|Customer To Customer
+Ctrl+L=frmDieselLedger|Customer To Dealer
+Ctrl+J=frmDealertoDealerView|Dealer To Dealer
+Ctrl+K=frmStockDieselView|Stock Diesel
+Ctrl+E=frmExpense|Expense
+Ctrl+B=frmBankAccountView|Bank Account
+Ctrl+H=frmDashBoard|Dashboard
+Ctrl+O=frmClosingformEntry|Closing Entry
+Ctrl+W=frmClosing2|Closing 2
+Ctrl+Q=ReportAndBackup|Reports
+Ctrl+G=frmGmailDriveBackup|Gmail Drive Backup

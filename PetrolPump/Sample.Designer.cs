@@ -1,4 +1,4 @@
-﻿namespace PetrolPump
+﻿namespace AlMadinaShahzad
 {
     partial class Sample
     {
@@ -38,6 +38,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Sample";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sample";
             this.ResumeLayout(false);
 

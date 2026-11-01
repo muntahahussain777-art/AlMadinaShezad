@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Textbox Name="DailySummaryTitle">
+        <CanGrow>true</CanGrow>
+        <Paragraphs><Paragraph><TextRuns><TextRun><Value>Date Wise Summary — Daily Diesel Sale − Stock Baqaya</Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>9.5pt</FontSize><Color>#1A2744</Color></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs>
+        <Top>0.08in</Top><Left>0.10in</Left><Height>0.24in</Height><Width>8.35in</Width>
+        <Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#FFF8E7</BackgroundColor><VerticalAlign>Middle</VerticalAlign></Style>
+      </Textbox>
+
+      <Tablix Name="DailySummaryTablix">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn><Width>0.95in</Width></TablixColumn>
+            <TablixColumn><Width>1.05in</Width></TablixColumn>
+            <TablixColumn><Width>1.05in</Width></TablixColumn>
+            <TablixColumn><Width>1.05in</Width></TablixColumn>
+            <TablixColumn><Width>1.10in</Width></TablixColumn>
+            <TablixColumn><Width>1.10in</Width></TablixColumn>
+            <TablixColumn><Width>1.35in</Width></TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.28in</Height>
+              <TablixCells>
+                <TablixCell><CellContents><Textbox Name="DS_H_Date"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>Date</Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>8.5pt</FontSize><Color>White</Color></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#1A2744</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="DS_H_Dealer"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>DealerAmount</Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>8.5pt</FontSize><Color>White</Color></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#273D76</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="DS_H_Add"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>Stock Add</Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>8.5pt</FontSize><Color>White</Color></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#273D76</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="DS_H_Minus"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>Stock Minus</Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>8.5pt</FontSize><Color>White</Color></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#273D76</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="DS_H_Baqaya"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>Stock Baqaya</Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>8.5pt</FontSize><Color>#D4AF37</Color></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#273D76</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="DS_H_Daily"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>Daily Sale</Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>8.5pt</FontSize><Color>White</Color></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#273D76</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="DS_H_Diff"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>Daily − Baqaya</Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>8.5pt</FontSize><Color>#D4AF37</Color></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#1A2744</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight></Style></Textbox></CellContents></TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.22in</Height>
+              <TablixCells>
+                <TablixCell><CellContents><Textbox Name="DS_D_Date"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!Date.Value</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>8pt</FontSize><Format>dd-MMM-yyyy</Format><Color>#212529</Color><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#CBD5E1</Color><Style>Solid</Style></Border><BackgroundColor>=IIF(RowNumber("DailySummarySet") Mod 2 = 0, "#F1F4F9", "#FFFFFF")</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="DS_D_Dealer"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!DealerAmountLitter.Value</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>8pt</FontSize><Format>N2</Format><Color>#1B8A49</Color></Style></TextRun></TextRuns><Style><TextAlign>Right</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#CBD5E1</Color><Style>Solid</Style></Border><BackgroundColor>=IIF(RowNumber("DailySummarySet") Mod 2 = 0, "#F1F4F9", "#FFFFFF")</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="DS_D_Add"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!StockAddLitter.Value</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>8pt</FontSize><Format>N2</Format><Color>#1B8A49</Color></Style></TextRun></TextRuns><Style><TextAlign>Right</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#CBD5E1</Color><Style>Solid</Style></Border><BackgroundColor>=IIF(RowNumber("DailySummarySet") Mod 2 = 0, "#F1F4F9", "#FFFFFF")</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="DS_D_Minus"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!StockMinusLitter.Value</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>8pt</FontSize><Format>N2</Format><Color>#B21D27</Color></Style></TextRun></TextRuns><Style><TextAlign>Right</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#CBD5E1</Color><Style>Solid</Style></Border><BackgroundColor>=IIF(RowNumber("DailySummarySet") Mod 2 = 0, "#F1F4F9", "#FFFFFF")</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="DS_D_Baqaya"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!StockBaqayaLitter.Value</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>8pt</FontSize><Format>N2</Format><Color>#7A3E00</Color><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style><TextAlign>Right</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#CBD5E1</Color><Style>Solid</Style></Border><BackgroundColor>=IIF(RowNumber("DailySummarySet") Mod 2 = 0, "#FFF8E7", "#FFFBF0")</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="DS_D_Daily"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!DailyDieselSaleLitter.Value</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>8pt</FontSize><Format>N2</Format><Color>#1B4F9C</Color><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style><TextAlign>Right</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#CBD5E1</Color><Style>Solid</Style></Border><BackgroundColor>=IIF(RowNumber("DailySummarySet") Mod 2 = 0, "#F1F4F9", "#FFFFFF")</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="DS_D_Diff"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!DailyMinusStockBaqaya.Value</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>8.5pt</FontSize><Format>N2</Format><Color>=IIF(Fields!DailyMinusStockBaqaya.Value &gt;= 0, "#1B8A49", "#B21D27")</Color><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style><TextAlign>Right</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>=IIF(RowNumber("DailySummarySet") Mod 2 = 0, "#FFF3E0", "#FFE8CC")</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight></Style></Textbox></CellContents></TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy><TablixMembers><TablixMember /><TablixMember /><TablixMember /><TablixMember /><TablixMember /><TablixMember /><TablixMember /></TablixMembers></TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember><KeepWithGroup>After</KeepWithGroup></TablixMember>
+            <TablixMember><Group Name="DailyDetails" /></TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>DailySummarySet</DataSetName>
+        <Top>0.36in</Top><Left>0.10in</Left><Height>0.50in</Height><Width>7.65in</Width>
+        <Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border></Style>
+      </Tablix>
+
+      <Textbox Name="DetailEntriesTitle">
+        <CanGrow>true</CanGrow>
+        <Paragraphs><Paragraph><TextRuns><TextRun><Value>Detail Entries (DealerAmount → Stock → Daily Diesel Sales)</Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>9pt</FontSize><Color>#1A2744</Color></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs>
+        <Top>1.05in</Top><Left>0.10in</Left><Height>0.22in</Height><Width>8.35in</Width>
+        <Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#EAF0FA</BackgroundColor><VerticalAlign>Middle</VerticalAlign></Style>
+      </Textbox>
+
+      <Tablix Name="CompareTablix">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn><Width>0.30in</Width></TablixColumn>
+            <TablixColumn><Width>1.28in</Width></TablixColumn>
+            <TablixColumn><Width>0.78in</Width></TablixColumn>
+            <TablixColumn><Width>1.35in</Width></TablixColumn>
+            <TablixColumn><Width>0.88in</Width></TablixColumn>
+            <TablixColumn><Width>0.82in</Width></TablixColumn>
+            <TablixColumn><Width>0.62in</Width></TablixColumn>
+            <TablixColumn><Width>0.58in</Width></TablixColumn>
+            <TablixColumn><Width>0.72in</Width></TablixColumn>
+            <TablixColumn><Width>1.02in</Width></TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.30in</Height>
+              <TablixCells>
+                <TablixCell><CellContents><Textbox Name="H_Sr"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>Sr</Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>8.5pt</FontSize><Color>White</Color></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#1A2744</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight><PaddingTop>3pt</PaddingTop><PaddingBottom>3pt</PaddingBottom></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="H_Source"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>Source</Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>8.5pt</FontSize><Color>White</Color></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#1A2744</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight><PaddingTop>3pt</PaddingTop><PaddingBottom>3pt</PaddingBottom></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="H_Date"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>Date</Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>8.5pt</FontSize><Color>White</Color></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#1A2744</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight><PaddingTop>3pt</PaddingTop><PaddingBottom>3pt</PaddingBottom></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="H_Party"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>Customer / Dealer</Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>8.5pt</FontSize><Color>White</Color></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#1A2744</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight><PaddingTop>3pt</PaddingTop><PaddingBottom>3pt</PaddingBottom></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="H_Vehicle"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>Vehicle</Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>8.5pt</FontSize><Color>White</Color></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#1A2744</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight><PaddingTop>3pt</PaddingTop><PaddingBottom>3pt</PaddingBottom></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="H_Type"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>Type</Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>8.5pt</FontSize><Color>White</Color></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#273D76</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight><PaddingTop>3pt</PaddingTop><PaddingBottom>3pt</PaddingBottom></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="H_Litter"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>Litter</Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>8.5pt</FontSize><Color>#D4AF37</Color></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#273D76</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight><PaddingTop>3pt</PaddingTop><PaddingBottom>3pt</PaddingBottom></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="H_Rate"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>Rate</Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>8.5pt</FontSize><Color>White</Color></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#273D76</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight><PaddingTop>3pt</PaddingTop><PaddingBottom>3pt</PaddingBottom></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="H_Amount"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>Amount</Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>8.5pt</FontSize><Color>#D4AF37</Color></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#273D76</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight><PaddingTop>3pt</PaddingTop><PaddingBottom>3pt</PaddingBottom></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="H_Note"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>Note</Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>8.5pt</FontSize><Color>White</Color></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#1A2744</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight><PaddingTop>3pt</PaddingTop><PaddingBottom>3pt</PaddingBottom></Style></Textbox></CellContents></TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.22in</Height>
+              <TablixCells>
+                <TablixCell><CellContents><Textbox Name="D_Sr"><CanGrow>true</CanGrow><KeepTogether>true</KeepTogether><Paragraphs><Paragraph><TextRuns><TextRun><Value>=RowNumber("DataSet1")</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>8pt</FontSize><Color>#212529</Color></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#CBD5E1</Color><Style>Solid</Style></Border><BackgroundColor>=IIF(RowNumber("DataSet1") Mod 2 = 0, "#F1F4F9", "#FFFFFF")</BackgroundColor><VerticalAlign>Top</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight><PaddingTop>3pt</PaddingTop><PaddingBottom>3pt</PaddingBottom></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="D_Source"><CanGrow>true</CanGrow><KeepTogether>true</KeepTogether><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!Source.Value</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>8pt</FontSize><Color>=IIF(Fields!Source.Value = "Daily Diesel Sales", "#1B4F9C", IIF(Fields!Source.Value = "DealerAmount", "#1B8A49", "#7A3E00"))</Color><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns></Paragraph></Paragraphs><Style><Border><Color>#CBD5E1</Color><Style>Solid</Style></Border><BackgroundColor>=IIF(RowNumber("DataSet1") Mod 2 = 0, "#F1F4F9", "#FFFFFF")</BackgroundColor><VerticalAlign>Top</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight><PaddingTop>3pt</PaddingTop><PaddingBottom>3pt</PaddingBottom></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="D_Date"><CanGrow>true</CanGrow><KeepTogether>true</KeepTogether><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!Date.Value</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>8pt</FontSize><Format>dd-MMM-yy</Format><Color>#212529</Color></Style></TextRun></TextRuns></Paragraph></Paragraphs><Style><Border><Color>#CBD5E1</Color><Style>Solid</Style></Border><BackgroundColor>=IIF(RowNumber("DataSet1") Mod 2 = 0, "#F1F4F9", "#FFFFFF")</BackgroundColor><VerticalAlign>Top</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight><PaddingTop>3pt</PaddingTop><PaddingBottom>3pt</PaddingBottom></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="D_Party"><CanGrow>true</CanGrow><KeepTogether>true</KeepTogether><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!PartyName.Value</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>8pt</FontSize><Color>#212529</Color></Style></TextRun></TextRuns></Paragraph></Paragraphs><Style><Border><Color>#CBD5E1</Color><Style>Solid</Style></Border><BackgroundColor>=IIF(RowNumber("DataSet1") Mod 2 = 0, "#F1F4F9", "#FFFFFF")</BackgroundColor><VerticalAlign>Top</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight><PaddingTop>3pt</PaddingTop><PaddingBottom>3pt</PaddingBottom></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="D_Vehicle"><CanGrow>true</CanGrow><KeepTogether>true</KeepTogether><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!Vehicle.Value</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>8pt</FontSize><Color>#212529</Color></Style></TextRun></TextRuns></Paragraph></Paragraphs><Style><Border><Color>#CBD5E1</Color><Style>Solid</Style></Border><BackgroundColor>=IIF(RowNumber("DataSet1") Mod 2 = 0, "#F1F4F9", "#FFFFFF")</BackgroundColor><VerticalAlign>Top</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight><PaddingTop>3pt</PaddingTop><PaddingBottom>3pt</PaddingBottom></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="D_Type"><CanGrow>true</CanGrow><KeepTogether>true</KeepTogether><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!EntryType.Value</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>8pt</FontSize><Color>=IIF((Fields!EntryType.Value = "Minus / Sale") Or (Fields!EntryType.Value = "Sale"), "#B21D27", "#1B8A49")</Color><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#CBD5E1</Color><Style>Solid</Style></Border><BackgroundColor>=IIF(RowNumber("DataSet1") Mod 2 = 0, "#F1F4F9", "#FFFFFF")</BackgroundColor><VerticalAlign>Top</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight><PaddingTop>3pt</PaddingTop><PaddingBottom>3pt</PaddingBottom></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="D_Litter"><CanGrow>true</CanGrow><KeepTogether>true</KeepTogether><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!Litter.Value</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>8pt</FontSize><Format>N2</Format><Color>#212529</Color><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style><TextAlign>Right</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#CBD5E1</Color><Style>Solid</Style></Border><BackgroundColor>=IIF(RowNumber("DataSet1") Mod 2 = 0, "#F1F4F9", "#FFFFFF")</BackgroundColor><VerticalAlign>Top</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight><PaddingTop>3pt</PaddingTop><PaddingBottom>3pt</PaddingBottom></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="D_Rate"><CanGrow>true</CanGrow><KeepTogether>true</KeepTogether><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!Rate.Value</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>8pt</FontSize><Format>N2</Format><Color>#212529</Color></Style></TextRun></TextRuns><Style><TextAlign>Right</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#CBD5E1</Color><Style>Solid</Style></Border><BackgroundColor>=IIF(RowNumber("DataSet1") Mod 2 = 0, "#F1F4F9", "#FFFFFF")</BackgroundColor><VerticalAlign>Top</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight><PaddingTop>3pt</PaddingTop><PaddingBottom>3pt</PaddingBottom></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="D_Amount"><CanGrow>true</CanGrow><KeepTogether>true</KeepTogether><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!Amount.Value</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>8pt</FontSize><Format>N0</Format><Color>#1A2744</Color><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style><TextAlign>Right</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Color>#CBD5E1</Color><Style>Solid</Style></Border><BackgroundColor>=IIF(RowNumber("DataSet1") Mod 2 = 0, "#F1F4F9", "#FFFFFF")</BackgroundColor><VerticalAlign>Top</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight><PaddingTop>3pt</PaddingTop><PaddingBottom>3pt</PaddingBottom></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="D_Note"><CanGrow>true</CanGrow><KeepTogether>true</KeepTogether><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!Note.Value</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>8pt</FontSize><Color>#212529</Color></Style></TextRun></TextRuns></Paragraph></Paragraphs><Style><Border><Color>#CBD5E1</Color><Style>Solid</Style></Border><BackgroundColor>=IIF(RowNumber("DataSet1") Mod 2 = 0, "#F1F4F9", "#FFFFFF")</BackgroundColor><VerticalAlign>Top</VerticalAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight><PaddingTop>3pt</PaddingTop><PaddingBottom>3pt</PaddingBottom></Style></Textbox></CellContents></TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember /><TablixMember /><TablixMember /><TablixMember /><TablixMember />
+            <TablixMember /><TablixMember /><TablixMember /><TablixMember /><TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember><KeepWithGroup>After</KeepWithGroup></TablixMember>
+            <TablixMember><Group Name="Details" /></TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>DataSet1</DataSetName>
+        <Top>1.31in</Top>
+        <Left>0.10in</Left>
+        <Height>0.52in</Height>
+        <Width>8.35in</Width>
+        <Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border></Style>
+      </Tablix>
+    </ReportItems>
+    <Height>2in</Height>
+    <Style><BackgroundColor>#FAFBFD</BackgroundColor></Style>
+  </Body>
+  <Width>8.55in</Width>
+  <Page>
+    <PageHeader>
+      <Height>2.33in</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Rectangle Name="HdrBanner">
+          <ReportItems>
+            <Textbox Name="HdrCompany">
+              <CanGrow>true</CanGrow>
+              <Paragraphs><Paragraph><TextRuns><TextRun><Value>Al Madina Shezad Chhutta Services</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>18pt</FontSize><FontWeight>Bold</FontWeight><Color>White</Color></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs>
+              <Top>0.06in</Top><Left>0.1in</Left><Height>0.52in</Height><Width>8.15in</Width>
+              <Style><Border><Style>None</Style></Border><BackgroundColor>#1A2744</BackgroundColor></Style>
+            </Textbox>
+            <Textbox Name="HdrTitle">
+              <CanGrow>true</CanGrow>
+              <Paragraphs><Paragraph><TextRuns><TextRun><Value>Litter Compare Report  —  Daily Sales  ·  DealerAmount  ·  Stock</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>10.5pt</FontSize><FontWeight>Bold</FontWeight><Color>#D4AF37</Color></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs>
+              <Top>0.4in</Top><Left>0.1in</Left><Height>0.2in</Height><Width>8.15in</Width>
+              <Style><Border><Style>None</Style></Border><BackgroundColor>#1A2744</BackgroundColor></Style>
+            </Textbox>
+            <Textbox Name="HdrDateRange">
+              <CanGrow>true</CanGrow>
+              <Paragraphs><Paragraph><TextRuns><TextRun><Value>=First(Fields!DateRange.Value, "SummarySet")</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>9pt</FontSize><Color>#E2E8F0</Color></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs>
+              <Top>0.62in</Top><Left>0.1in</Left><Height>0.18in</Height><Width>8.15in</Width>
+              <Style><Border><Style>None</Style></Border><BackgroundColor>#1A2744</BackgroundColor></Style>
+            </Textbox>
+          </ReportItems>
+          <KeepTogether>true</KeepTogether>
+          <Top>0.02in</Top><Left>0.10in</Left><Height>0.82in</Height><Width>8.35in</Width>
+          <Style><BackgroundColor>#1A2744</BackgroundColor><Border><Color>#D4AF37</Color><Style>Solid</Style></Border></Style>
+        </Rectangle>
+
+        <Textbox Name="HdrDealer">
+          <CanGrow>true</CanGrow>
+          <Paragraphs><Paragraph><TextRuns><TextRun><Value>DealerAmount Litter: </Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>8.5pt</FontSize><Color>#1A2744</Color></Style></TextRun><TextRun><Value>=First(Fields!DealerAmountLitter.Value, "SummarySet")</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>8.5pt</FontSize><Color>#1B8A49</Color><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns></Paragraph></Paragraphs>
+          <Top>0.92in</Top><Left>0.10in</Left><Height>0.22in</Height><Width>2.70in</Width>
+          <Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#EAF7EF</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>4pt</PaddingLeft><PaddingRight>4pt</PaddingRight></Style>
+        </Textbox>
+        <Textbox Name="HdrSales">
+          <CanGrow>true</CanGrow>
+          <Paragraphs><Paragraph><TextRuns><TextRun><Value>Daily Diesel Sale Litter: </Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>8.5pt</FontSize><Color>#1A2744</Color></Style></TextRun><TextRun><Value>=First(Fields!DailyDieselSaleLitter.Value, "SummarySet")</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>8.5pt</FontSize><Color>#1B4F9C</Color><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns></Paragraph></Paragraphs>
+          <Top>0.92in</Top><Left>2.90in</Left><Height>0.22in</Height><Width>2.70in</Width>
+          <Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#EAF0FA</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>4pt</PaddingLeft><PaddingRight>4pt</PaddingRight></Style>
+        </Textbox>
+        <Textbox Name="HdrStockBaqaya">
+          <CanGrow>true</CanGrow>
+          <Paragraphs><Paragraph><TextRuns><TextRun><Value>Stock Baqaya Litter: </Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>8.5pt</FontSize><Color>#1A2744</Color></Style></TextRun><TextRun><Value>=First(Fields!StockBaqayaLitter.Value, "SummarySet")</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>8.5pt</FontSize><Color>#D4AF37</Color><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns></Paragraph></Paragraphs>
+          <Top>0.92in</Top><Left>5.70in</Left><Height>0.22in</Height><Width>2.75in</Width>
+          <Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#FFF8E7</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>4pt</PaddingLeft><PaddingRight>4pt</PaddingRight></Style>
+        </Textbox>
+
+        <Textbox Name="HdrStockAdd">
+          <CanGrow>true</CanGrow>
+          <Paragraphs><Paragraph><TextRuns><TextRun><Value>Stock Add Litter: </Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>8.5pt</FontSize><Color>#1A2744</Color></Style></TextRun><TextRun><Value>=First(Fields!StockAddLitter.Value, "SummarySet")</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>8.5pt</FontSize><Color>#1B8A49</Color><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns></Paragraph></Paragraphs>
+          <Top>1.20in</Top><Left>0.10in</Left><Height>0.22in</Height><Width>2.70in</Width>
+          <Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#EAF7EF</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>4pt</PaddingLeft><PaddingRight>4pt</PaddingRight></Style>
+        </Textbox>
+        <Textbox Name="HdrStockMinus">
+          <CanGrow>true</CanGrow>
+          <Paragraphs><Paragraph><TextRuns><TextRun><Value>Stock Minus Litter: </Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>8.5pt</FontSize><Color>#1A2744</Color></Style></TextRun><TextRun><Value>=First(Fields!StockMinusLitter.Value, "SummarySet")</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>8.5pt</FontSize><Color>#B21D27</Color><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns></Paragraph></Paragraphs>
+          <Top>1.20in</Top><Left>2.90in</Left><Height>0.22in</Height><Width>2.70in</Width>
+          <Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#FDECEC</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>4pt</PaddingLeft><PaddingRight>4pt</PaddingRight></Style>
+        </Textbox>
+        <Textbox Name="HdrCompare">
+          <CanGrow>true</CanGrow>
+          <Paragraphs><Paragraph><TextRuns><TextRun><Value>Daily Sale - Stock Baqaya: </Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>9pt</FontSize><Color>#1A2744</Color></Style></TextRun><TextRun><Value>=First(Fields!DailyMinusStockBaqaya.Value, "SummarySet")</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>10pt</FontSize><Color>#7A3E00</Color><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns></Paragraph></Paragraphs>
+          <Top>1.20in</Top><Left>5.70in</Left><Height>0.22in</Height><Width>2.75in</Width>
+          <Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#FFF3E0</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>4pt</PaddingLeft><PaddingRight>4pt</PaddingRight></Style>
+        </Textbox>
+
+        <Textbox Name="HdrPurchaseSaleDiff">
+          <CanGrow>true</CanGrow>
+          <Paragraphs><Paragraph><TextRuns><TextRun><Value>Purchase - Sale Diff: </Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>8.5pt</FontSize><Color>#1A2744</Color></Style></TextRun><TextRun><Value>=First(Fields!CompareDifference.Value, "SummarySet")</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>8.5pt</FontSize><Color>#B21D27</Color><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns></Paragraph></Paragraphs>
+          <Top>1.48in</Top><Left>5.70in</Left><Height>0.22in</Height><Width>2.75in</Width>
+          <Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#FDECEC</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>4pt</PaddingLeft><PaddingRight>4pt</PaddingRight></Style>
+        </Textbox>
+
+        <Textbox Name="HdrTotalPurchase">
+          <CanGrow>true</CanGrow>
+          <Paragraphs><Paragraph><TextRuns><TextRun><Value>Total Purchase (Dealer + Stock Add): </Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>8.5pt</FontSize><Color>#1A2744</Color></Style></TextRun><TextRun><Value>=First(Fields!TotalPurchaseLitter.Value, "SummarySet")</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>9pt</FontSize><Color>#1B8A49</Color><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns></Paragraph></Paragraphs>
+          <Top>1.48in</Top><Left>0.10in</Left><Height>0.22in</Height><Width>4.10in</Width>
+          <Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#EAF7EF</BackgroundColor><VerticalAlign>Middle</VerticalAlign><PaddingLeft>4pt</PaddingLeft><PaddingRight>4pt</PaddingRight></Style>
+        </Textbox>
+        <Textbox Name="HdrTotalSale">
+          <CanGrow>true</CanGrow>
+          <Paragraphs><Paragraph><TextRuns><TextRun><Value>Total Sale (Daily + Stock Minus): </Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>8.5pt</FontSize><Color>#1A2744</Color></Style></TextRun><TextRun><Value>=First(Fields!TotalSaleLitter.Value, "SummarySet")</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>9pt</FontSize><Color>#B21D27</Color><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns></Paragraph></Paragraphs>
+          <Top>1.48in</Top><Left>4.30in</Left><Height>0.22in</Height><Width>1.30in</Width>
+          <ZIndex>1</ZIndex>
+          <Visibility><Hidden>true</Hidden></Visibility>
+          <Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#FDECEC</BackgroundColor></Style>
+        </Textbox>
+
+        <Textbox Name="HdrDailySaleMinusLabel">
+          <CanGrow>true</CanGrow>
+          <Paragraphs><Paragraph><TextRuns><TextRun><Value>★ Daily Diesel Sale − Stock Baqaya (Total Range)</Value><Style><FontFamily>Segoe UI</FontFamily><FontWeight>Bold</FontWeight><FontSize>9pt</FontSize><Color>#D4AF37</Color></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs>
+          <Top>1.76in</Top><Left>0.10in</Left><Height>0.20in</Height><Width>8.35in</Width>
+          <Style><Border><Style>None</Style></Border><BackgroundColor>#1A2744</BackgroundColor><VerticalAlign>Middle</VerticalAlign></Style>
+        </Textbox>
+        <Textbox Name="HdrDailySaleMinusValue">
+          <CanGrow>true</CanGrow>
+          <Paragraphs><Paragraph><TextRuns><TextRun><Value>=First(Fields!DailyDieselSaleLitter.Value, "SummarySet") &amp; "  −  " &amp; First(Fields!StockBaqayaLitter.Value, "SummarySet") &amp; "  =  " &amp; First(Fields!DailyMinusStockBaqaya.Value, "SummarySet")</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>9pt</FontSize><Color>White</Color><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs>
+          <Top>1.96in</Top><Left>0.10in</Left><Height>0.22in</Height><Width>8.35in</Width>
+          <Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border><BackgroundColor>#273D76</BackgroundColor><VerticalAlign>Middle</VerticalAlign></Style>
+        </Textbox>
+
+        <Line Name="HdrGoldLine">
+          <Top>2.24in</Top><Left>0.10in</Left><Height>0in</Height><Width>8.35in</Width>
+          <Style><Border><Color>#D4AF37</Color><Style>Solid</Style></Border></Style>
+        </Line>
+      </ReportItems>
+      <Style><BackgroundColor>#FAFBFD</BackgroundColor></Style>
+    </PageHeader>
+    <PageFooter>
+      <Height>0.38in</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Rectangle Name="FtrBar">
+          <ReportItems>
+            <Textbox Name="FtrLeft">
+              <CanGrow>true</CanGrow>
+              <Paragraphs><Paragraph><TextRuns><TextRun><Value>Al Madina Shezad Chhutta Services  —  Litter Compare (Sales · DealerAmount · Stock)</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>8pt</FontSize><Color>#E2E8F0</Color></Style></TextRun></TextRuns></Paragraph></Paragraphs>
+              <Top>0.06in</Top><Left>0.1in</Left><Height>0.16in</Height><Width>5.6in</Width>
+              <Style><Border><Style>None</Style></Border><BackgroundColor>#1A2744</BackgroundColor></Style>
+            </Textbox>
+            <Textbox Name="FtrPage">
+              <CanGrow>true</CanGrow>
+              <Paragraphs><Paragraph><TextRuns><TextRun><Value>="Page " &amp; Globals!PageNumber &amp; " of " &amp; Globals!TotalPages</Value><Style><FontFamily>Segoe UI</FontFamily><FontSize>8pt</FontSize><Color>#D4AF37</Color><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style><TextAlign>Right</TextAlign></Style></Paragraph></Paragraphs>
+              <Top>0.06in</Top><Left>5.7in</Left><Height>0.16in</Height><Width>2.55in</Width>
+              <Style><Border><Style>None</Style></Border><BackgroundColor>#1A2744</BackgroundColor></Style>
+            </Textbox>
+          </ReportItems>
+          <Top>0.02in</Top><Left>0.10in</Left><Height>0.28in</Height><Width>8.35in</Width>
+          <Style><BackgroundColor>#1A2744</BackgroundColor><Border><Style>None</Style></Border></Style>
+        </Rectangle>
+      </ReportItems>
+    </PageFooter>
+    <PageHeight>8.27in</PageHeight>
+    <PageWidth>11.69in</PageWidth>
+    <LeftMargin>0.35in</LeftMargin>
+    <RightMargin>0.35in</RightMargin>
+    <TopMargin>0.25in</TopMargin>
+    <BottomMargin>0.25in</BottomMargin>
+    <Style><BackgroundColor>#FAFBFD</BackgroundColor></Style>
+  </Page>
+  <DataSources>
+    <DataSource Name="CompareLocal">
+      <ConnectionProperties><DataProvider>System.Data.DataSet</DataProvider><ConnectString>/* Local Connection */</ConnectString></ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query><DataSourceName>CompareLocal</DataSourceName><CommandText>/* Local Query */</CommandText></Query>
+      <Fields>
+        <Field Name="Source"><DataField>Source</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="Date"><DataField>Date</DataField><rd:TypeName>System.DateTime</rd:TypeName></Field>
+        <Field Name="PartyName"><DataField>PartyName</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="Vehicle"><DataField>Vehicle</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="EntryType"><DataField>EntryType</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="Litter"><DataField>Litter</DataField><rd:TypeName>System.Decimal</rd:TypeName></Field>
+        <Field Name="Rate"><DataField>Rate</DataField><rd:TypeName>System.Decimal</rd:TypeName></Field>
+        <Field Name="Amount"><DataField>Amount</DataField><rd:TypeName>System.Decimal</rd:TypeName></Field>
+        <Field Name="Note"><DataField>Note</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="SummarySet">
+      <Query><DataSourceName>CompareLocal</DataSourceName><CommandText>/* Local Query */</CommandText></Query>
+      <Fields>
+        <Field Name="DateRange"><DataField>DateRange</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="DealerAmountLitter"><DataField>DealerAmountLitter</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="DailyDieselSaleLitter"><DataField>DailyDieselSaleLitter</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="StockAddLitter"><DataField>StockAddLitter</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="StockMinusLitter"><DataField>StockMinusLitter</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="StockBaqayaLitter"><DataField>StockBaqayaLitter</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="DailyMinusStockBaqaya"><DataField>DailyMinusStockBaqaya</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="TotalPurchaseLitter"><DataField>TotalPurchaseLitter</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="TotalSaleLitter"><DataField>TotalSaleLitter</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="CompareDifference"><DataField>CompareDifference</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="DailySummarySet">
+      <Query><DataSourceName>CompareLocal</DataSourceName><CommandText>/* Local Query */</CommandText></Query>
+      <Fields>
+        <Field Name="Date"><DataField>Date</DataField><rd:TypeName>System.DateTime</rd:TypeName></Field>
+        <Field Name="DealerAmountLitter"><DataField>DealerAmountLitter</DataField><rd:TypeName>System.Decimal</rd:TypeName></Field>
+        <Field Name="StockAddLitter"><DataField>StockAddLitter</DataField><rd:TypeName>System.Decimal</rd:TypeName></Field>
+        <Field Name="StockMinusLitter"><DataField>StockMinusLitter</DataField><rd:TypeName>System.Decimal</rd:TypeName></Field>
+        <Field Name="StockBaqayaLitter"><DataField>StockBaqayaLitter</DataField><rd:TypeName>System.Decimal</rd:TypeName></Field>
+        <Field Name="DailyDieselSaleLitter"><DataField>DailyDieselSaleLitter</DataField><rd:TypeName>System.Decimal</rd:TypeName></Field>
+        <Field Name="DailyMinusStockBaqaya"><DataField>DailyMinusStockBaqaya</DataField><rd:TypeName>System.Decimal</rd:TypeName></Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+</Report>

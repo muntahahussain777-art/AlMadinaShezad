@@ -8,22 +8,63 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PetrolPump.Properties
-{
-
-
+namespace AlMadinaShahzad.Properties {
+    
+    
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "11.0.0.0")]
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase
-    {
-
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.14.0.0")]
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
-
-        public static Settings Default
-        {
-            get
-            {
+        
+        public static Settings Default {
+            get {
                 return defaultInstance;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDb)\\v11.0;Initial Catalog=islampetrolpump;Integrated Security=T" +
+            "rue;Encrypt=True")]
+        public string islampetrolpumpConnectionString {
+            get {
+                return ((string)(this["islampetrolpumpConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDb)\\v11.0;Initial Catalog=MustafaCompany;Integrated Security=Tr" +
+            "ue")]
+        public string MustafaCompanyConnectionString {
+            get {
+                return ((string)(this["MustafaCompanyConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDb)\\v11.0;Initial Catalog=E:\\DISELPETROLPUMP\\PETROLPUMP\\PETROLP" +
+            "UMP\\BIN\\DEBUG\\DISELPETROLPUMP.MDF;Integrated Security=True")]
+        public string E__DISELPETROLPUMP_PETROLPUMP_PETROLPUMP_BIN_DEBUG_DISELPETROLPUMP_MDFConnectionString {
+            get {
+                return ((string)(this["E__DISELPETROLPUMP_PETROLPUMP_PETROLPUMP_BIN_DEBUG_DISELPETROLPUMP_MDFConnectionS" +
+                    "tring"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDb)\\v11.0;Initial Catalog=DiselPetrolPump;Integrated Security=T" +
+            "rue")]
+        public string DiselPetrolPumpConnectionString {
+            get {
+                return ((string)(this["DiselPetrolPumpConnectionString"]));
             }
         }
     }

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Tablix Name="Tablix1">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn><Width>1.1in</Width></TablixColumn>
+            <TablixColumn><Width>1.1in</Width></TablixColumn>
+            <TablixColumn><Width>0.75in</Width></TablixColumn>
+            <TablixColumn><Width>0.75in</Width></TablixColumn>
+            <TablixColumn><Width>1in</Width></TablixColumn>
+            <TablixColumn><Width>1.5in</Width></TablixColumn>
+            <TablixColumn><Width>0.85in</Width></TablixColumn>
+            <TablixColumn><Width>0.85in</Width></TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.3in</Height>
+              <TablixCells>
+                <TablixCell><CellContents><Textbox Name="H0"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>Dealer</Value><Style><FontSize>11pt</FontSize><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="H1"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>Name</Value><Style><FontSize>11pt</FontSize><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="H2"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>Amount Given (-)</Value><Style><FontSize>11pt</FontSize><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="H3"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>Amount Taken (+)</Value><Style><FontSize>11pt</FontSize><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="H4"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>Bank</Value><Style><FontSize>11pt</FontSize><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="H5"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>Note</Value><Style><FontSize>11pt</FontSize><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="H6"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>Date</Value><Style><FontSize>11pt</FontSize><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="H7"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>Balance</Value><Style><FontSize>11pt</FontSize><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border></Style></Textbox></CellContents></TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.25in</Height>
+              <TablixCells>
+                <TablixCell><CellContents><Textbox Name="D0"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!DealerName.Value</Value><Style><FontSize>10pt</FontSize></Style></TextRun></TextRuns></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="D1"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!CustomerName.Value</Value><Style><FontSize>10pt</FontSize></Style></TextRun></TextRuns></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="D2"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!Debit.Value</Value><Style><FontSize>10pt</FontSize></Style></TextRun></TextRuns></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="D3"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!Credit.Value</Value><Style><FontSize>10pt</FontSize></Style></TextRun></TextRuns></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="D4"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!BankName.Value</Value><Style><FontSize>10pt</FontSize></Style></TextRun></TextRuns></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="D5"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!Note.Value</Value><Style><FontSize>10pt</FontSize></Style></TextRun></TextRuns></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="D6"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!TransactionDate.Value</Value><Style><FontSize>10pt</FontSize></Style></TextRun></TextRuns></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border></Style></Textbox></CellContents></TablixCell>
+                <TablixCell><CellContents><Textbox Name="D7"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!Balance.Value</Value><Style><FontSize>10pt</FontSize></Style></TextRun></TextRuns></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border></Style></Textbox></CellContents></TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember /><TablixMember /><TablixMember /><TablixMember />
+            <TablixMember /><TablixMember /><TablixMember /><TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember><KeepWithGroup>After</KeepWithGroup></TablixMember>
+            <TablixMember><Group Name="Details" /></TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>DataSet1</DataSetName>
+        <Top>0.1in</Top>
+        <Left>0.1in</Left>
+        <Height>0.6in</Height>
+        <Width>7.9in</Width>
+      </Tablix>
+      <Textbox Name="TotalDebit">
+        <Top>1.2in</Top><Left>5in</Left><Width>3in</Width><Height>0.3in</Height>
+        <Paragraphs><Paragraph><TextRuns>
+          <TextRun><Value>Total Given: </Value><Style><FontWeight>Bold</FontWeight></Style></TextRun>
+          <TextRun><Value>=Sum(Fields!Debit.Value, "DataSet1")</Value><Style><FontWeight>Bold</FontWeight></Style></TextRun>
+        </TextRuns></Paragraph></Paragraphs>
+      </Textbox>
+      <Textbox Name="TotalCredit">
+        <Top>1.55in</Top><Left>5in</Left><Width>3in</Width><Height>0.3in</Height>
+        <Paragraphs><Paragraph><TextRuns>
+          <TextRun><Value>Total Taken: </Value><Style><FontWeight>Bold</FontWeight></Style></TextRun>
+          <TextRun><Value>=Sum(Fields!Credit.Value, "DataSet1")</Value><Style><FontWeight>Bold</FontWeight></Style></TextRun>
+        </TextRuns></Paragraph></Paragraphs>
+      </Textbox>
+      <Textbox Name="TotalBal">
+        <Top>1.9in</Top><Left>5in</Left><Width>3in</Width><Height>0.3in</Height>
+        <Paragraphs><Paragraph><TextRuns>
+          <TextRun><Value>Balance: </Value><Style><FontWeight>Bold</FontWeight></Style></TextRun>
+          <TextRun><Value>=Sum(Fields!Credit.Value, "DataSet1") - Sum(Fields!Debit.Value, "DataSet1")</Value><Style><FontWeight>Bold</FontWeight></Style></TextRun>
+        </TextRuns></Paragraph></Paragraphs>
+      </Textbox>
+    </ReportItems>
+    <Height>2.5in</Height>
+  </Body>
+  <Width>9in</Width>
+  <Page>
+    <PageHeader>
+      <Height>1.05in</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="Title">
+          <Top>0.1in</Top><Left>0.1in</Left><Width>8.5in</Width><Height>0.35in</Height>
+          <Paragraphs><Paragraph><TextRuns><TextRun><Value>Al Madina Shezad Chhutta Services</Value><Style><FontSize>18pt</FontSize><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs>
+        </Textbox>
+        <Textbox Name="SubTitle">
+          <Top>0.45in</Top><Left>0.1in</Left><Width>8.5in</Width><Height>0.3in</Height>
+          <Paragraphs><Paragraph><TextRuns><TextRun><Value>=Parameters!ReportTitle.Value &amp; " — Bank: " &amp; Parameters!BankName.Value</Value><Style><FontSize>14pt</FontSize><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs>
+        </Textbox>
+      </ReportItems>
+    </PageHeader>
+    <PageHeight>8.5in</PageHeight>
+    <PageWidth>11in</PageWidth>
+    <LeftMargin>0.5in</LeftMargin>
+    <RightMargin>0.5in</RightMargin>
+    <TopMargin>0.5in</TopMargin>
+    <BottomMargin>0.5in</BottomMargin>
+  </Page>
+  <DataSources>
+    <DataSource Name="bankdataset">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>a1b2c3d4-e5f6-7890-abcd-ef1234567890</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>bankdataset</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Id"><DataField>Id</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="DealerName"><DataField>DealerName</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="CustomerName"><DataField>CustomerName</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="Debit"><DataField>Debit</DataField><rd:TypeName>System.Decimal</rd:TypeName></Field>
+        <Field Name="Credit"><DataField>Credit</DataField><rd:TypeName>System.Decimal</rd:TypeName></Field>
+        <Field Name="BankName"><DataField>BankName</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="Note"><DataField>Note</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="TransactionDate"><DataField>TransactionDate</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="Balance"><DataField>Balance</DataField><rd:TypeName>System.Decimal</rd:TypeName></Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="BankName">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>BankName</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReportTitle">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <DefaultValue>
+        <Values>
+          <Value>Bank Account Report</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ReportTitle</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>b2c3d4e5-f6a7-8901-bcde-f12345678901</rd:ReportID>
+</Report>

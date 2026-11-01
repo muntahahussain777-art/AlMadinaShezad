@@ -8,13 +8,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PetrolPump
+namespace AlMadinaShahzad
 {
     public partial class SampleView : Sample
     {
         public SampleView()
         {
             InitializeComponent();
+            KeyPreview = true;
+        }
+
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == (Keys.Control | Keys.N) && btnAdd != null && btnAdd.Enabled && btnAdd.Visible)
+            {
+                btnAdd_Click(btnAdd, EventArgs.Empty);
+                return true;
+            }
+
+            return base.ProcessCmdKey(ref msg, keyData);
         }
 
       

@@ -1,4 +1,4 @@
-﻿namespace PetrolPump
+﻿namespace AlMadinaShahzad
 {
     partial class SampleView
     {
@@ -37,10 +37,11 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.txtSearch);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(954, 86);
@@ -121,10 +122,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2Button btnAdd;
         public Guna.UI2.WinForms.Guna2TextBox txtSearch;
-        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Panel panel1;
+        public Guna.UI2.WinForms.Guna2Button btnAdd;
+        public System.Windows.Forms.Label label1;
     }
 }
